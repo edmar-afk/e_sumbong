@@ -1,0 +1,200 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <title>Homepage</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'homepage/assets/images/logo.png' %}">
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'homepage/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'homepage/assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'homepage/assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'homepage/assets/css/animated.css' %}">
+    <link rel="stylesheet" href="{% static 'homepage/assets/css/owl.css' %}">
+
+</head>
+
+<body>
+
+ 
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="{% url 'users:homepage' %}" class="logo">
+              <h4>E - Sumbong<img src="{% static 'homepage/assets/images/logo.png' %}" draggable="false" alt=""></h4>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#features">Features</a></li>
+              <li class="scroll-to-section"><a href="#about">Services</a></li>
+              
+              <li class="scroll-to-section"><a href="{% url 'users:user-register' %}">Register</a></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row">
+                 
+                  <div class="col-lg-12">
+                    <h2>Poblacion Guipos, ZDS</h2>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="main-green-button scroll-to-section" >
+                      <a href="{% url 'users:user-register' %}">Register Now!</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="{% static 'homepage/assets/images/home1.jpg' %}" draggable="false" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="features" class="features section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="features-content">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                  <div class="first-number number">
+                    <h6>01</h6>
+                  </div>
+                  <div class="icon"></div>
+                  <h4>Reach Out</h4>
+                  <div class="line-dec"></div>
+                  <p>Encouraging complaints from residents will not only help firms get better at handling 
+                    and resolving them it will also help them encourage their customers to provide better 
+                    and more useful feedback.</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="features-item second-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                  <div class="second-number number">
+                    <h6>02</h6>
+                  </div>
+                  <div class="icon"></div>
+                  <h4>Easy Filing</h4>
+                  <div class="line-dec"></div>
+                  <p>Easy filing means the process of attending to and resolving complaints 
+                    including ongoing interaction with complainants via online. Before taken action, 
+                    it is expected that this process meets certain minimum standards.</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="about-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.5728154055378!2d123.31941011432075!3d7.728896210121616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32541db724733b95%3A0x1a3004b07cf8f9a3!2sGuipos%20Municipal%20Hall!5e0!3m2!1sen!2sph!4v1660777249368!5m2!1sen!2sph" width="100%" height="433" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="col-lg-6 align-self-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+          <div class="section-heading">
+            <h6>Services</h6>
+            <h2>Pob. <em>Guipos</em> Complaint Management <span>Portal</span></h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-sm-4">
+              <div class="about-item">
+                <h4>1</h4>
+                <h6>Registered Users</h6>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-4">
+              <div class="about-item">
+                <h4>{{ count }}</h4>
+                <h6>Complaints recieved</h6>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-4">
+              <div class="about-item">
+                <h4>1</h4>
+                <h6>Complaints Resolved</h6>
+              </div>
+            </div>
+            
+          <p>
+            All in all, complaints management truly is an essential component of residents service 
+            and town's success. Not only is it the means to gather valuable residents' insight, it 
+            also helps the Pob. Guipos progress to improvements that lead to reduced costs, increased 
+            profitability and increased its residents' satisfaction.
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>E-sumbong © 2022 
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="{% static 'homepage/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'homepage/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'homepage/assets/js/owl-carousel.js' %}"></script>
+  <script src="{% static 'homepage/assets/js/animation.js' %}"></script>
+  <script src="{% static 'homepage/assets/js/imagesloaded.js' %}"></script>
+  <script src="{% static 'homepage/assets/js/custom.js' %}"></script>
+
+</body>
+</html>
